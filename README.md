@@ -1,29 +1,28 @@
-# microbrowser-engine
+# Microbrowser Engine
 
-Este proyecto es una implementación experimental y educativa de un navegador web simple, siguiendo la guía [*Build Your Own Browser*](https://browser.engineering/).
+Este proyecto es una implementación educativa de un navegador simple, construido siguiendo la guía [Build Your Own Browser](https://browser.engineering/).
 
-## 📚 Objetivo
+## 📚 Capítulos completados
 
-Explorar los principios detrás de un motor de navegador (parsing, layout, rendering, etc.) desde cero, entendiendo cómo los navegadores modernos procesan HTML, CSS y JS.
+- [ ] Parsing de HTML
+- [ ] Layout básico
+- [ ] Renderizado en ventana
+- [ ] Scroll y estilos
 
-## 🧱 Tecnologías utilizadas
+## 🚀 Tecnologías
 
-- Python (sugerido por la guía)
-- TKinter (renderizado gráfico)
-- HTML básico como entrada
+- Python 3.x
+- TKinter (para UI)
+- HTML como entrada
 
-## 🚧 Estado del proyecto
+## 🎯 Objetivo
 
-- [x] Parsing básico de HTML
-- [ ] Layout engine
-- [ ] Estilos en cascada (CSS)
-- [ ] Scroll
-- [ ] Interactividad
+Comprender a fondo cómo funcionan los navegadores modernos construyendo uno desde cero, paso a paso.
 
-## 📖 Fuente
+## 🧠 Fuente
 
-Guía oficial: [https://browser.engineering](https://browser.engineering)
+Guía oficial: https://browser.engineering
 
-## 🧠 Autor
+## ✍️ Autor
 
-Construido con fines educativos por [Tu nombre o usuario]
+Desarrollado por [@dmonarchc](https://github.com/dmonarchc)

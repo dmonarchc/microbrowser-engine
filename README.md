@@ -1,28 +1,84 @@
-# Microbrowser Engine
+# MicroBrowser Engine
 
-Este proyecto es una implementación educativa de un navegador simple, construido siguiendo la guía [Build Your Own Browser](https://browser.engineering/).
+A lightweight browser engine implemented in Python to explore how web browsers communicate over HTTP, retrieve documents, process responses, and render content.
 
-## 📚 Capítulos completados
+This project focuses on understanding browser internals by implementing networking, resource loading, caching, compression handling, and content rendering from first principles.
 
-- [ ] Parsing de HTML
-- [ ] Layout básico
-- [ ] Renderizado en ventana
-- [ ] Scroll y estilos
+---
 
-## 🚀 Tecnologías
+## Features
 
-- Python 3.x
-- TKinter (para UI)
-- HTML como entrada
+### Networking
 
-## 🎯 Objetivo
+- HTTP/1.1 support
+- HTTPS support
+- Custom request headers
+- User-Agent support
+- Keep-Alive connections
+- Socket reuse between requests
 
-Comprender a fondo cómo funcionan los navegadores modernos construyendo uno desde cero, paso a paso.
+### URL Schemes
 
-## 🧠 Fuente
+- HTTP URLs
+- HTTPS URLs
+- Local File URLs (`file://`)
+- Data URLs (`data:`)
+- View Source URLs (`view-source:`)
 
-Guía oficial: https://browser.engineering
+### HTTP Processing
 
-## ✍️ Autor
+- Redirect handling (3xx responses)
+- Response caching
+- Cache-Control support
+- Gzip decompression
+- Chunked transfer decoding
+- Content-Length handling
 
-Desarrollado por [@dmonarchc](https://github.com/dmonarchc)
+### Rendering
+
+- Basic HTML text extraction
+- HTML entity decoding
+- Source code viewing mode
+
+---
+
+## Project Structure
+
+```text
+microbrowser-engine/
+│
+├── microbrowser/
+│   ├── __init__.py
+│   ├── browser.py
+│   └── url.py
+│
+├── examples/
+│   └── test.html
+│
+├── main.py
+└── README.md
+```
+
+## Running
+
+```bash
+python main.py http://info.cern.ch
+```
+
+```bash
+python main.py file:///C:/path/to/file.html
+```
+
+```bash
+python main.py "data:text/html,<h1>Hello World</h1>"
+```
+
+```bash
+python main.py "view-source:http://info.cern.ch"
+```
+
+## Status
+
+Current stage: Networking and document retrieval engine completed.
+
+Next stage: HTML parsing and document tree construction.
